@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <title>SoSpri-the-page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/pr_bbw.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script>
+    $(function() {
+      $("#includedHeader").load("fragments/header.html");
+      $("#includedFooter").load("fragments/footer.html");
+    });
+  </script>
+  <style>
+    .progress-bar {
+      border-radius: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="includedHeader"></div>
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div>
+            <h4 style="margin-top: 30px">Register</h4>
+            <div class="row">
+              <div class=" col-lg-8 col-lg-offset-2">
+                <form name="registerForm" id="register-form" method="post" action="" role="form" th:action="@{/get-register}" th:object="${registerMember}">
+                  <div class="messages"></div>
+                  <div class="controls">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="form_name">Firstname *</label>
+                          <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required"  minlength="2" maxlength="25" pattern="([a-zA-Z]){2,25}" oninvalid="this.setCustomValidity('Buchstaben von A-Z und von 2 bis 25 Zeichen')"
+                                 oninput="this.setCustomValidity('')" data-error="Firstname is required." th:field="*{prename}">
+                          <div class="help-block with-errors"></div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="form_lastname">Lastname *</label> <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required"  minlength="2" maxlength="25" pattern="([a-zA-Z]){2,25}" oninvalid="this.setCustomValidity('Buchstaben von A-Z und von 2 bis 25 Zeichen')" oninput="this.setCustomValidity('')" data-error="Lastname is required." th:field="*{lastname}">
+                          <div class="help-block with-errors"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="form_password">Password *</label> <input onkeyup="isGood(this.value)" id="form_password" type="password" name="password" class="form-control" placeholder="Please enter your password *" required="required"  minlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=]).{8,}" oninvalid="this.setCustomValidity('Mindestens 8 Zeichen, mind. 1 Buschstabe von A-Z, mind. 1 Buschstabe von a-z, mind. 1 Sonderzeichen und mind. 1 Nummer')" oninput="this.setCustomValidity('')" data-error="Valid password is required." th:field="*{password}">
+                          <small class="help-block" id="password-text"></small>
+                          <div class="help-block with-errors"></div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="form_confirmation">Passwort
+                            confirmation *</label> <input id="form_confirmation" type="password" name="confirmation" class="form-control" placeholder="Please enter your password*" required="required" data-error="Valid confirmation is required."
+                            th:field="*{confirmation}">
+                          <div class="help-block with-errors"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="g-recaptcha col-sm-5" th:attr="data-sitekey=${@captchaSettings.getSite()}"></div>
+                      <span id="captchaError" class="alert alert-danger col-sm-4" style="display:none"></span>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <input onclick="return BothFieldsIdenticalCaseSensitive();"  type="submit" class="btn btn-success btn-send" value="Register">
+                        <p></p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <b th:if="${#fields.hasErrors('prename')}" th:errors="*{prename}">Prename Error</b>
+                        <b th:if="${#fields.hasErrors('lastname')}" th:errors="*{lastname}">Lastname Error</b>
+                        <b th:if="${#fields.hasErrors('password')}" th:errors="*{password}">password Error</b>
+                        <b th:text="*{message}"></b>
+                      </div>
+                    </div> 
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div style="height: 200px"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <script>
+    function BothFieldsIdenticalCaseSensitive() {
+      var one = document.registerForm.password.value;
+      var another = document.registerForm.confirmation.value;
+      if(one === another) { return true; }
+      alert("Beide Passwörter müssen gleich sein");
+      return false;
+    }
+  </script>
+  <script>
+    function isGood(password) {
+      var password_strength = document.getElementById("password-text");
+
+      //TextBox left blank.
+      if (password.length == 0) {
+        password_strength.innerHTML = "";
+        return;
+      }
+
+      //Regular Expressions.
+      var regex = new Array();
+      regex.push("[A-Z]"); //Uppercase Alphabet.
+      regex.push("[a-z]"); //Lowercase Alphabet.
+      regex.push("[0-9]"); //Digit.
+      regex.push("[$@$!%*#?&+]"); //Special Character.
+
+      var passed = 0;
+
+      //Validate for each Regular Expression.
+      for (var i = 0; i < regex.length; i++) {
+        if (new RegExp(regex[i]).test(password)) {
+          passed++;
+        }
+      }
+
+      //Display status.
+      var strength = "";
+      switch (passed) {
+        case 0:
+        case 1:
+        case 2:
+          strength = "<small class='progress-bar bg-danger' style='width: 40%'>Weak</small>";
+          break;
+        case 3:
+          strength = "<small class='progress-bar bg-warning' style='width: 60%'>Medium</small>";
+          break;
+        case 4:
+          strength = "<small class='progress-bar bg-success' style='width: 100%'>Strong</small>";
+          break;
+
+      }
+      password_strength.innerHTML = strength;
+
+    }
+  </script>
+
+
+  <div id="includedFooter"></div>
+</body>
+
+</html>
+
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    background-color: #17a2b8;
+  }
+
+  .pr_border_solid {
+    border-style: solid;
+    border-color: #17a2b8;
+    border-width: 2px;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+
+  .pr_text_green {
+    color: #28a745;
+  }
+
+  .search-tag-link {
+    color: #17a2b8;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .search-tag-link:hover {
+    text-decoration: underline;
+  }
+
+  .input-group {
+    margin-bottom: 10px;
+  }
+
+  .input-group-btn {
+    display: flex;
+    align-items: center;
+  }
+
+  .input-group-btn > .btn {
+    height: 30px;
+    margin-left: 5px;
+  }
+
+  #messages-panel {
+    max-height: 300px;
+    overflow-y: auto;
+  }
+
+  #btn-send {
+    background-color: #ffc107;
+    border-color: #ffc107;
+    color: #fff;
+  }
+
+  #btn-send:hover {
+    background-color: #ff9800;
+    border-color: #ff9800;
+  }
+</style>

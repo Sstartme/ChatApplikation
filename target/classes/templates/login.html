@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>login</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/pr_bbw.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script>
+        $(function() {
+            $("#includedHeader").load("fragments/header.html");
+            $("#includedFooter").load("fragments/footer.html");
+        });
+    </script>
+</head>
+
+<body>
+<div id="includedHeader"></div>
+<div style="margin-top: 50px;margin-bottom: 50px" class="container">
+    <form name="login-form" th:action="@{/login}" method="post">
+        <div th:if="${param.logout}" class="alert alert-success">
+            you have been logged out.
+        </div>
+        <!-- Username input -->
+        <div class="form-outline mb-4 form-group">
+            <label class="form-label" for="username" >Username</label>
+            <input id="username" name="username" type="text"  class="form-control" />
+        </div>
+
+        <!-- Password input -->
+        <div class="form-outline mb-4 form-group">
+            <label  for="password" class="form-label">Password</label>
+            <input id="password" name="password" type="password"  class="form-control" />
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="token">Token</label>
+                    <input id="token"
+                           type="text"
+                           name="code"
+                           class="form-control"
+                           placeholder="Token"
+                           required="required">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Submit button -->
+        <input class="btn btn-success btn-send" type="submit" value="signin">
+
+
+        <!-- Register buttons -->
+        <div class="row">
+            <div class="col-6 text-center">
+                <a class="nav-link" href="oauth_login">Google login</a>
+            </div>
+            <div class="col-6 text-center">
+                <p>Not a member? <a href="/get-register">Register</a></p>
+            </div>
+        </div>
+    </form>
+</div>
+
+</section>
+<div class='air air1'></div>
+<div class='air air2'></div>
+<div class='air air3'></div>
+<div class='air air4'></div>
+</section>
+
+</section>
+<div id="includedFooter" class="fixed-bottom"></div>
+</body>
+<div class='air air1'></div>
+<div class='air air2'></div>
+<div class='air air3'></div>
+<div class='air air4'></div>
+</section>
+</body>
+
+</html>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+        background-color: #17a2b8;
+    }
+
+    .pr_border_solid {
+        border-style: solid;
+        border-color: #17a2b8;
+        border-width: 2px;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    .pr_text_green {
+        color: #28a745;
+    }
+
+    .search-tag-link {
+        color: #17a2b8;
+        font-size: 14px;
+        font-weight: bold;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .search-tag-link:hover {
+        text-decoration: underline;
+    }
+
+    .input-group {
+        margin-bottom: 10px;
+    }
+
+    .input-group-btn {
+        display: flex;
+        align-items: center;
+    }
+
+    .input-group-btn > .btn {
+        height: 30px;
+        margin-left: 5px;
+    }
+
+    #messages-panel {
+        max-height: 300px;
+        overflow-y: auto;
+    }
+
+    #btn-send {
+        background-color: #ffc107;
+        border-color: #ffc107;
+        color: #fff;
+    }
+
+    #btn-send:hover {
+        background-color: #ff9800;
+        border-color: #ff9800;
+    }
+</style>

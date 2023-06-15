@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Logout</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/pr_bbw.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script>
+        $(function() {
+            $("#includedHeader").load("fragments/header.html");
+            $("#includedFooter").load("fragments/footer.html");
+        });
+    </script>
+</head>
+
+<body>
+<div id="includedHeader"></div>
+<div class="container text-center">
+    <br><br>
+    <form name="f" th:action="@{/logout}" method="post">
+        <!-- Submit button -->
+        <input onclick="
+        if (confirm('Are you sure you want to logout?')) {
+            // Save it!
+            console.log('You have been logged out');
+        } else {
+            // Do nothing!
+            return false;
+        }
+        " type="submit" class="btn btn-success btn-send" value="Log out">
+    </form>
+    <br><br>
+</div>
+<div id="includedFooter"></div>
+
+</body>
+
+
+</html>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+        background-color: #17a2b8;
+    }
+
+    .pr_border_solid {
+        border-style: solid;
+        border-color: #17a2b8;
+        border-width: 2px;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    .pr_text_green {
+        color: #28a745;
+    }
+
+    .search-tag-link {
+        color: #17a2b8;
+        font-size: 14px;
+        font-weight: bold;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .search-tag-link:hover {
+        text-decoration: underline;
+    }
+
+    .input-group {
+        margin-bottom: 10px;
+    }
+
+    .input-group-btn {
+        display: flex;
+        align-items: center;
+    }
+
+    .input-group-btn > .btn {
+        height: 30px;
+        margin-left: 5px;
+    }
+
+    #messages-panel {
+        max-height: 300px;
+        overflow-y: auto;
+    }
+
+    #btn-send {
+        background-color: #ffc107;
+        border-color: #ffc107;
+        color: #fff;
+    }
+
+    #btn-send:hover {
+        background-color: #ff9800;
+        border-color: #ff9800;
+    }
+</style>
