@@ -1,0 +1,252 @@
+2023-05-25 07:36:19,615 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting Application on MacBook-Pro-von-Sinthella.local with PID 1212 (started by sinthellaanpalagan in /Users/sinthellaanpalagan/Library/CloudStorage/OneDrive-Swisscom/Schule/3.Jahr_2.Semester/Modul 183/SoSpri_App_SinthellaAnpalagan)
+2023-05-25 07:36:19,619 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2023-05-25 07:36:19,677 INFO org.springframework.boot.logging.DeferredLog [restartedMain] The Class-Path manifest attribute in /Users/sinthellaanpalagan/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/Users/sinthellaanpalagan/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/Users/sinthellaanpalagan/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/Users/sinthellaanpalagan/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/Users/sinthellaanpalagan/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/Users/sinthellaanpalagan/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/Users/sinthellaanpalagan/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2023-05-25 07:36:19,677 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-05-25 07:36:19,677 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-05-25 07:36:21,057 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-25 07:36:21,138 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 74ms. Found 2 JPA repository interfaces.
+2023-05-25 07:36:21,844 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2023-05-25 07:36:21,851 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2023-05-25 07:36:21,852 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2023-05-25 07:36:21,852 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.31]
+2023-05-25 07:36:21,928 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-05-25 07:36:21,928 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 2251 ms
+2023-05-25 07:36:22,053 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-05-25 07:36:22,246 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-05-25 07:36:22,253 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console/'. Database available at 'jdbc:h2:mem:chatdb'
+2023-05-25 07:36:22,616 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-25 07:36:22,665 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.4.12.Final
+2023-05-25 07:36:22,756 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2023-05-25 07:36:22,837 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-05-25 07:36:23,421 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-25 07:36:23,426 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-25 07:36:23,466 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-05-25 07:36:23,842 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-25 07:36:24,029 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3f702faf, org.springframework.security.web.context.SecurityContextPersistenceFilter@396de5e4, org.springframework.security.web.header.HeaderWriterFilter@751bd13b, org.springframework.security.web.csrf.CsrfFilter@2566c59, org.springframework.security.web.authentication.logout.LogoutFilter@478a46b6, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@30fa845a, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@2eb6bb7f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@44eed66f, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@65263567, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@141e1f5f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@46138bb8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7bcc6db0, org.springframework.security.web.session.SessionManagementFilter@2914e98c, org.springframework.security.web.access.ExceptionTranslationFilter@56462701, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@238563ba]
+2023-05-25 07:36:24,179 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2023-05-25 07:36:24,233 INFO org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [restartedMain] Adding welcome page: class path resource [static/index.html]
+2023-05-25 07:36:24,486 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 2 endpoint(s) beneath base path '/actuator'
+2023-05-25 07:36:24,553 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2023-05-25 07:36:24,568 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2023-05-25 07:36:24,572 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started Application in 5.538 seconds (JVM running for 6.443)
+2023-05-25 07:36:24,576 INFO ch.bbw.pr.sospri.Application [restartedMain] Starting my application with 0 args.
+2023-05-25 07:36:24,944 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(2)-127.0.0.1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-25 07:36:24,945 INFO org.springframework.web.servlet.FrameworkServlet [RMI TCP Connection(2)-127.0.0.1] Initializing Servlet 'dispatcherServlet'
+2023-05-25 07:36:24,950 INFO org.springframework.web.servlet.FrameworkServlet [RMI TCP Connection(2)-127.0.0.1] Completed initialization in 5 ms
+2023-05-25 07:37:30,494 INFO ch.bbw.pr.sospri.RegisterController [http-nio-8080-exec-8] User got registered
+2023-05-25 07:37:30,608 INFO ch.bbw.pr.sospri.RegisterController [http-nio-8080-exec-8] Member successfully registered: RegisterMember [prename=sin, lastname=abu, password=kidsNature4?@, confirmation=kidsNature4?@]
+2023-05-25 07:37:30,608 INFO ch.bbw.pr.sospri.RegisterController [http-nio-8080-exec-8] Registered new Member: Member [id=20, prename=sin, lastname=abu, password=okP8znJ9OtR4LWldmjJ/Bn1OGMnEgVnkO4Ekh4+a9pCjEsN+VNLkWQ==, username=sin.abu, authority=member]
+2023-05-25 07:41:32,544 INFO ch.bbw.pr.sospri.RegisterController [http-nio-8080-exec-7] User got registered
+2023-05-25 07:41:32,634 INFO ch.bbw.pr.sospri.RegisterController [http-nio-8080-exec-7] Member successfully registered: RegisterMember [prename=sin, lastname=ru, password=Sinthinature4?@, confirmation=Sinthinature4?@]
+2023-05-25 07:41:32,634 INFO ch.bbw.pr.sospri.RegisterController [http-nio-8080-exec-7] Registered new Member: Member [id=21, prename=sin, lastname=ru, password=kfhEGn/ObDd+0HDo1DXimE6DYwPTxE2DA7QpwAfcROPLOMKGUqqcXw==, username=sin.ru, authority=member]
+2023-05-25 07:49:23,931 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-1] Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2023-05-25 07:49:40,206 INFO ch.bbw.pr.sospri.RegisterController [http-nio-8080-exec-5] User got registered
+2023-05-25 07:49:40,299 INFO ch.bbw.pr.sospri.RegisterController [http-nio-8080-exec-5] Member successfully registered: RegisterMember [prename=sin, lastname=ha, password=Sinthinature4?@, confirmation=Sinthinature4?@]
+2023-05-25 07:49:40,300 INFO ch.bbw.pr.sospri.RegisterController [http-nio-8080-exec-5] Registered new Member: Member [id=22, prename=sin, lastname=ha, password=23f9fe73WSy1UNBvwwPpWwfDUzhW62qSZbybvMZLZl8p8HVtJWNsbg==, username=sin.ha, authority=member]
+2023-05-25 07:53:12,946 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2023-05-25 07:53:12,947 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringContextShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-25 07:53:12,959 ERROR com.zaxxer.hikari.pool.HikariPool [HikariPool-1 connection adder] HikariPool-1 - Error thrown while acquiring connection from data source
+org.h2.jdbc.JdbcSQLNonTransientConnectionException: Die Datenbank befindet sich im Exclusiv Modus; es können keine zusätzlichen Verbindungen geöffnet werden
+The database is open in exclusive mode; can not open additional connections [90135-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:622)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.engine.Session.checkSuspended(Session.java:1369)
+	at org.h2.engine.Session.transitionToState(Session.java:1361)
+	at org.h2.engine.Session.waitIfExclusiveModeEnabled(Session.java:1633)
+	at org.h2.command.Command.executeQuery(Command.java:186)
+	at org.h2.jdbc.JdbcConnection.isReadOnly(JdbcConnection.java:631)
+	at com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:398)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:473)
+	at com.zaxxer.hikari.pool.HikariPool.access$100(HikariPool.java:71)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:719)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:705)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-05-25 07:53:13,163 WARN org.springframework.beans.factory.support.DisposableBeanAdapter [SpringContextShutdownHook] Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Die Datenbank wurde bereits geschlossen (um das automatische Schliessen beim Stopp der VM zu deaktivieren, die Datenbank URL mit ";DB_CLOSE_ON_EXIT=FALSE" ergänzen)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2023-05-25 07:53:13,166 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-05-25 07:53:13,219 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.
+2023-11-05 12:59:38,307 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting Application on MBPvonSinthella.fritz.box with PID 2064 (started by sinthellaanpalagan in /Users/sinthellaanpalagan/Library/CloudStorage/OneDrive-Swisscom/Schule/3.Jahr_2.Semester/Modul 183/SoSpri_App_SinthellaAnpalagan)
+2023-11-05 12:59:38,310 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2023-11-05 12:59:38,366 INFO org.springframework.boot.logging.DeferredLog [restartedMain] The Class-Path manifest attribute in /Users/sinthellaanpalagan/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/Users/sinthellaanpalagan/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/Users/sinthellaanpalagan/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/Users/sinthellaanpalagan/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/Users/sinthellaanpalagan/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/Users/sinthellaanpalagan/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/Users/sinthellaanpalagan/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2023-11-05 12:59:38,366 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-05 12:59:38,366 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-05 12:59:39,674 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-11-05 12:59:39,752 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 71ms. Found 2 JPA repository interfaces.
+2023-11-05 12:59:40,492 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2023-11-05 12:59:40,499 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2023-11-05 12:59:40,500 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2023-11-05 12:59:40,500 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.31]
+2023-11-05 12:59:40,570 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-11-05 12:59:40,570 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 2204 ms
+2023-11-05 12:59:40,678 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-11-05 12:59:40,870 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-11-05 12:59:40,877 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console/'. Database available at 'jdbc:h2:mem:chatdb'
+2023-11-05 12:59:41,255 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-11-05 12:59:41,299 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.4.12.Final
+2023-11-05 12:59:41,381 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2023-11-05 12:59:41,454 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-11-05 12:59:42,051 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-11-05 12:59:42,056 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-11-05 12:59:42,101 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-11-05 12:59:42,488 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-11-05 12:59:42,724 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@c29959e, org.springframework.security.web.context.SecurityContextPersistenceFilter@2914e98c, org.springframework.security.web.header.HeaderWriterFilter@56462701, org.springframework.security.web.csrf.CsrfFilter@2936d392, org.springframework.security.web.authentication.logout.LogoutFilter@31398a79, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@215ba666, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@5d11c001, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@672c6232, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4f9a8a81, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@396de5e4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3a109ce7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6388a214, org.springframework.security.web.session.SessionManagementFilter@751bd13b, org.springframework.security.web.access.ExceptionTranslationFilter@50b2f1e7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@760b6dd7]
+2023-11-05 12:59:42,892 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2023-11-05 12:59:42,955 INFO org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [restartedMain] Adding welcome page: class path resource [static/index.html]
+2023-11-05 12:59:43,246 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 2 endpoint(s) beneath base path '/actuator'
+2023-11-05 12:59:43,317 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2023-11-05 12:59:43,334 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2023-11-05 12:59:43,339 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started Application in 5.619 seconds (JVM running for 6.555)
+2023-11-05 12:59:43,344 INFO ch.bbw.pr.sospri.Application [restartedMain] Starting my application with 0 args.
+2023-11-05 12:59:43,618 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(3)-192.168.178.29] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-05 12:59:43,620 INFO org.springframework.web.servlet.FrameworkServlet [RMI TCP Connection(3)-192.168.178.29] Initializing Servlet 'dispatcherServlet'
+2023-11-05 12:59:43,629 INFO org.springframework.web.servlet.FrameworkServlet [RMI TCP Connection(3)-192.168.178.29] Completed initialization in 8 ms
+2023-11-05 13:00:33,495 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2023-11-05 13:00:33,498 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringContextShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-11-05 13:00:33,723 WARN org.springframework.beans.factory.support.DisposableBeanAdapter [SpringContextShutdownHook] Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Die Datenbank wurde bereits geschlossen (um das automatische Schliessen beim Stopp der VM zu deaktivieren, die Datenbank URL mit ";DB_CLOSE_ON_EXIT=FALSE" ergänzen)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2023-11-05 13:00:33,723 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-11-05 13:00:33,775 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.
+2023-11-05 13:00:37,790 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting Application on MBPvonSinthella.fritz.box with PID 2099 (started by sinthellaanpalagan in /Users/sinthellaanpalagan/Library/CloudStorage/OneDrive-Swisscom/Schule/3.Jahr_2.Semester/Modul 183/SoSpri_App_SinthellaAnpalagan)
+2023-11-05 13:00:37,793 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2023-11-05 13:00:37,864 INFO org.springframework.boot.logging.DeferredLog [restartedMain] The Class-Path manifest attribute in /Users/sinthellaanpalagan/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/Users/sinthellaanpalagan/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/Users/sinthellaanpalagan/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/Users/sinthellaanpalagan/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/Users/sinthellaanpalagan/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/Users/sinthellaanpalagan/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/Users/sinthellaanpalagan/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2023-11-05 13:00:37,864 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-05 13:00:37,864 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-05 13:00:39,442 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-11-05 13:00:39,542 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 86ms. Found 2 JPA repository interfaces.
+2023-11-05 13:00:40,297 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2023-11-05 13:00:40,304 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2023-11-05 13:00:40,304 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2023-11-05 13:00:40,304 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.31]
+2023-11-05 13:00:40,374 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-11-05 13:00:40,375 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 2511 ms
+2023-11-05 13:00:40,493 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-11-05 13:00:40,690 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-11-05 13:00:40,697 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console/'. Database available at 'jdbc:h2:mem:chatdb'
+2023-11-05 13:00:41,087 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-11-05 13:00:41,132 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.4.12.Final
+2023-11-05 13:00:41,223 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2023-11-05 13:00:41,305 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-11-05 13:00:41,896 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-11-05 13:00:41,900 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-11-05 13:00:41,947 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-11-05 13:00:42,303 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-11-05 13:00:42,494 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6cccbe3c, org.springframework.security.web.context.SecurityContextPersistenceFilter@13cdd5e, org.springframework.security.web.header.HeaderWriterFilter@55d44041, org.springframework.security.web.csrf.CsrfFilter@7011c226, org.springframework.security.web.authentication.logout.LogoutFilter@79435a07, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@13f2c7b6, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@6b6556e7, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7a504ead, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@53435ec, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@59f1af2a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5304db74, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1ce4f38a, org.springframework.security.web.session.SessionManagementFilter@77915516, org.springframework.security.web.access.ExceptionTranslationFilter@3b94b04d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5367eac9]
+2023-11-05 13:00:42,755 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2023-11-05 13:00:42,839 INFO org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [restartedMain] Adding welcome page: class path resource [static/index.html]
+2023-11-05 13:00:43,165 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 2 endpoint(s) beneath base path '/actuator'
+2023-11-05 13:00:43,243 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2023-11-05 13:00:43,261 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2023-11-05 13:00:43,266 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started Application in 6.125 seconds (JVM running for 7.066)
+2023-11-05 13:00:43,272 INFO ch.bbw.pr.sospri.Application [restartedMain] Starting my application with 0 args.
+2023-11-05 13:00:43,741 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(2)-192.168.178.29] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-05 13:00:43,742 INFO org.springframework.web.servlet.FrameworkServlet [RMI TCP Connection(2)-192.168.178.29] Initializing Servlet 'dispatcherServlet'
+2023-11-05 13:00:43,747 INFO org.springframework.web.servlet.FrameworkServlet [RMI TCP Connection(2)-192.168.178.29] Completed initialization in 5 ms
+2023-11-05 13:00:51,964 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2023-11-05 13:00:51,965 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringContextShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-11-05 13:00:51,975 ERROR com.zaxxer.hikari.pool.HikariPool [HikariPool-1 connection adder] HikariPool-1 - Error thrown while acquiring connection from data source
+org.h2.jdbc.JdbcSQLNonTransientConnectionException: Die Datenbank befindet sich im Exclusiv Modus; es können keine zusätzlichen Verbindungen geöffnet werden
+The database is open in exclusive mode; can not open additional connections [90135-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:622)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.engine.Session.checkSuspended(Session.java:1369)
+	at org.h2.engine.Session.transitionToState(Session.java:1361)
+	at org.h2.engine.Session.waitIfExclusiveModeEnabled(Session.java:1633)
+	at org.h2.command.Command.executeQuery(Command.java:186)
+	at org.h2.jdbc.JdbcConnection.isReadOnly(JdbcConnection.java:631)
+	at com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:398)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:473)
+	at com.zaxxer.hikari.pool.HikariPool.access$100(HikariPool.java:71)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:719)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:705)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-11-05 13:00:52,178 WARN org.springframework.beans.factory.support.DisposableBeanAdapter [SpringContextShutdownHook] Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Die Datenbank wurde bereits geschlossen (um das automatische Schliessen beim Stopp der VM zu deaktivieren, die Datenbank URL mit ";DB_CLOSE_ON_EXIT=FALSE" ergänzen)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2023-11-05 13:00:52,181 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-11-05 13:00:52,233 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.
+2023-11-05 13:00:56,316 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting Application on MBPvonSinthella.fritz.box with PID 2122 (started by sinthellaanpalagan in /Users/sinthellaanpalagan/Library/CloudStorage/OneDrive-Swisscom/Schule/3.Jahr_2.Semester/Modul 183/SoSpri_App_SinthellaAnpalagan)
+2023-11-05 13:00:56,319 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2023-11-05 13:00:56,391 INFO org.springframework.boot.logging.DeferredLog [restartedMain] The Class-Path manifest attribute in /Users/sinthellaanpalagan/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/Users/sinthellaanpalagan/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/Users/sinthellaanpalagan/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/Users/sinthellaanpalagan/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/Users/sinthellaanpalagan/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/Users/sinthellaanpalagan/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/Users/sinthellaanpalagan/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2023-11-05 13:00:56,392 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-05 13:00:56,392 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-05 13:00:57,597 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-11-05 13:00:57,676 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 71ms. Found 2 JPA repository interfaces.
+2023-11-05 13:00:58,371 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2023-11-05 13:00:58,378 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2023-11-05 13:00:58,379 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2023-11-05 13:00:58,379 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.31]
+2023-11-05 13:00:58,449 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-11-05 13:00:58,450 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 2058 ms
+2023-11-05 13:00:58,556 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-11-05 13:00:58,736 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-11-05 13:00:58,743 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console/'. Database available at 'jdbc:h2:mem:chatdb'
+2023-11-05 13:00:59,095 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-11-05 13:00:59,139 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.4.12.Final
+2023-11-05 13:00:59,221 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2023-11-05 13:00:59,286 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-11-05 13:00:59,833 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-11-05 13:00:59,837 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-11-05 13:00:59,878 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-11-05 13:01:00,245 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-11-05 13:01:00,442 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7f2e07aa, org.springframework.security.web.context.SecurityContextPersistenceFilter@459c28fd, org.springframework.security.web.header.HeaderWriterFilter@769d4d84, org.springframework.security.web.csrf.CsrfFilter@7a98f9ed, org.springframework.security.web.authentication.logout.LogoutFilter@617eb0e9, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@6b6556e7, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@3ae2a26e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4bfb9fa, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@19666da2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2dadcfb8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7b1279c2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@761a6b2d, org.springframework.security.web.session.SessionManagementFilter@2435775f, org.springframework.security.web.access.ExceptionTranslationFilter@691986a0, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@98e19da]
+2023-11-05 13:01:00,591 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2023-11-05 13:01:00,647 INFO org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [restartedMain] Adding welcome page: class path resource [static/index.html]
+2023-11-05 13:01:00,911 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 2 endpoint(s) beneath base path '/actuator'
+2023-11-05 13:01:00,980 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2023-11-05 13:01:00,995 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2023-11-05 13:01:01,008 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started Application in 5.276 seconds (JVM running for 6.177)
+2023-11-05 13:01:01,014 INFO ch.bbw.pr.sospri.Application [restartedMain] Starting my application with 0 args.
+2023-11-05 13:01:01,291 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(1)-192.168.178.29] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-05 13:01:01,294 INFO org.springframework.web.servlet.FrameworkServlet [RMI TCP Connection(1)-192.168.178.29] Initializing Servlet 'dispatcherServlet'
+2023-11-05 13:01:01,302 INFO org.springframework.web.servlet.FrameworkServlet [RMI TCP Connection(1)-192.168.178.29] Completed initialization in 8 ms
+2023-11-05 15:14:41,920 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m12s68ms).
+2023-11-05 15:15:34,038 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=52s123ms).
+2023-11-05 15:18:22,399 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m18s349ms).
+2023-11-05 15:21:13,881 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=49s553ms).
+2023-11-05 15:23:50,131 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m36s250ms).
+2023-11-05 15:45:49,319 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=21m29s173ms).
+2023-11-05 15:53:48,984 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7m59s665ms).
+2023-11-05 15:56:19,322 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m231ms).
+2023-11-05 15:57:59,725 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m10s408ms).
+2023-11-05 16:04:40,060 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m40s337ms).
+2023-11-05 16:06:08,560 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=58s490ms).
+2023-11-05 16:08:28,081 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m19s521ms).
+2023-11-05 16:11:36,902 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=54s898ms).
+2023-11-05 16:15:48,928 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m42s10ms).
+2023-11-05 17:01:03,665 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m14s444ms).
+2023-11-05 17:03:32,479 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=57s973ms).
+2023-11-05 17:14:46,010 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=57s331ms).
+2023-11-05 17:17:56,039 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m8s579ms).
+2023-11-05 17:19:30,019 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m3s965ms).
+2023-11-05 17:20:50,221 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m20s203ms).
+2023-11-05 17:23:58,971 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=58s854ms).
+2023-11-05 17:25:34,892 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m5s905ms).
+2023-11-05 17:43:57,292 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m1s867ms).
+2023-11-05 17:45:11,181 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m13s889ms).
+2023-11-05 17:46:38,082 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=56s891ms).
+2023-11-05 17:50:52,260 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m31s917ms).
+2023-11-05 17:53:33,224 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m6s337ms).
+2023-11-05 17:55:37,438 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m2s522ms).
+2023-11-05 18:00:50,727 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=51s670ms).
+2023-11-05 18:05:26,369 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=48s50ms).
+2023-11-05 18:11:42,317 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=48s179ms).
+2023-11-05 18:53:26,267 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=41m13s930ms).
+2023-11-05 20:54:08,271 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m11s180ms).
+2023-11-05 20:58:28,268 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m19s998ms).
+2023-11-05 20:59:58,054 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=59s782ms).
+2023-11-05 21:02:35,614 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m7s551ms).

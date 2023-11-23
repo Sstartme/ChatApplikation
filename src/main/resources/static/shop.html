@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title> <title>Anu's Henna</title></title>
+	  <link href="img/logo.jpeg" rel="icon">
+
+	  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+
+
+	  <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+	  <style>
+		  body {
+			  background-color:  #fcebe3;
+			  color: #fcebe3;
+		  }
+		  /* Adjust the size of the Magnific Popup image container */
+		  .mfp-figure {
+			  max-width: 70%; /* Adjust the percentage as needed */
+			  margin: 0 auto;
+		  }
+
+		  /* Add styles to the right side container for description */
+		  .mfp-description {
+			  max-width: 80%; /* Adjust the percentage as needed */
+			  padding: 50px;
+			  box-sizing: border-box;
+			  background-color: deeppink; /* Set a background color if needed */
+		  }
+		  /* Add styles to enhance the appearance of the title and other details in the Magnific Popup */
+		  .mfp-title {
+			  margin-top: 20px;
+			  font-size: 24px;
+			  font-weight: bold;
+			  margin-bottom: 20px;
+		  }
+
+		  .mfp-price {
+			  font-size: 18px;
+			  color: palevioletred;
+			  margin-bottom: 5px;
+		  }
+
+		  .mfp-length {
+			  font-size: 16px;
+			  margin-bottom: 5px;
+			  color: #fcebe3 ;
+		  }
+
+		  .mfp-custom-description {
+			  font-size: 16px;
+			  color: #fcebe3;
+			  text-align: justify;
+		  }
+		  /* Add styles to enhance the appearance of menu entries */
+		  .menu-entry {
+			  text-align: center;
+			  margin-bottom: 30px;
+		  }
+
+		  .menu-entry h3 {
+			  font-size: 20px;
+			  font-weight: bold;
+			  margin-top: 10px;
+			  margin-bottom: 10px;
+		  }
+
+		  .menu-entry p {
+			  font-size: 16px;
+			  line-height: 1.5;
+			  margin-bottom: 15px;
+			  color: #fcebe3;
+		  }
+
+		  .menu-entry .price {
+			  font-size: 18px;
+			  color: #333; /* Adjust text color */
+			  margin-bottom: 15px;
+		  }
+
+		  .menu-entry .btn {
+			  font-size: 16px;
+		  }
+		  /* Add styles to make "Designer Sari" titles red and remove underline */
+		  .menu-entry h3 a {
+			  text-decoration: none;
+		  }
+
+
+	  </style>
+
+	  <script>
+		  $(function() {
+			  $("#includedHeader").load("fragments/header.html");
+			  $("#includedFooter").load("fragments/footer.html");
+		  })
+			  $(function() {
+			  // Initialize Magnific Popup
+			  $('.magnific-popup').magnificPopup({
+				  type: 'image',
+				  gallery: {
+					  enabled: true
+				  },
+				  image: {
+					  titleSrc: function(item) {
+						  return '<div class="mfp-title">' + item.el.attr('data-title') + '</div>' +
+						  '<div class="mfp-price" style="color: red">' + item.el.attr('data-price') + '</div>' +
+						  '<div class="mfp-length">' + item.el.attr('data-length') + '</div>' +
+						  '<div class="mfp-custom-description">' + item.el.attr('data-description') + '</div>';
+					  }
+				  }
+			  });
+
+			  // Handle click event on images to open popup
+			  $('.magnific-popup').on('click', function() {
+				  $(this).magnificPopup('open');
+			  });
+		  });
+
+
+	  </script>
+  </head>
+  <body>
+
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+		  <span class="navbar-toggler-icon"></span>
+	  </button>
+
+    <section class="home-slider owl-carousel">
+
+      <div class="slider-item" style="background-image: url(images/indiandress.jpeg);" data-stellar-background-ratio="0.5">
+      	<div class="overlay"></div>
+        <div class="container">
+          <div class="row slider-text justify-content-center align-items-center">
+
+            <div class="col-md-7 col-sm-12 text-center ftco-animate">
+            	<h1 class="mb-3 mt-5 bread">Order Online</h1>
+	            <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home</a></span> <span>Shop</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="ftco-menu mb-5 pb-5">
+    	<div class="container">
+    		<div class="row d-md-flex">
+	    		<div class="col-lg-12 ftco-animate p-md-5">
+		    		<div class="row">
+		          <div class="col-md-12 nav-link-wrap mb-5">
+		            <div class="nav ftco-animate nav-pills justify-content-center" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+		            	<a class="nav-link active" id="v-pills-0-tab" data-toggle="pill" href="#v-pills-0" role="tab" aria-controls="v-pills-0" aria-selected="true">Sari</a>
+
+		              <a class="nav-link" id="v-pills-1-tab" data-toggle="pill" href="#v-pills-1" role="tab" aria-controls="v-pills-1" aria-selected="false">Lehenga</a>
+
+		              <a class="nav-link" id="v-pills-2-tab" data-toggle="pill" href="#v-pills-2" role="tab" aria-controls="v-pills-2" aria-selected="false">necklace</a>
+
+		              <a class="nav-link" id="v-pills-3-tab" data-toggle="pill" href="#v-pills-3" role="tab" aria-controls="v-pills-3" aria-selected="false">earings</a>
+		            </div>
+		          </div>
+		          <div class="col-md-12 d-flex align-items-center">
+
+		            <div class="tab-content ftco-animate" id="v-pills-tabContent">
+
+		              <div class="tab-pane fade show active" id="v-pills-0" role="tabpanel" aria-labelledby="v-pills-0-tab">
+		              	<div class="row">
+		              		<div class="col-md-3">
+						        		<div class="menu-entry">
+						    					<a href="images/Sari1.webp" class="img magnific-popup" data-title="Designer Sari" data-description="The traditional saree is more than just a piece of clothing; it is a symbol of elegance, tradition, and the diverse cultural tapestry of India. Its roots can be traced back thousands of years, making it a garment deeply entrenched in the country's history and customs.
+
+The intricate craftsmanship involved in creating a traditional saree is a testament to the skilled artisans who have passed down their expertise through generations. From the selection of fabric to the meticulous weaving and embroidery, each saree tells a unique story. The diversity of sarees across different regions in India adds to the richness of this cultural emblem. Whether it's the vibrant Banarasi silk from Varanasi, the delicate Kanjeevaram silk from Tamil Nadu, or the colorful Bandhani sarees from Gujarat and Rajasthan, each variant reflects the distinct traditions and aesthetics of its place of origin.
+
+The draping style of the saree is an art in itself, with various regional variations. The way it is worn not only adds to the charm of the attire but also signifies different occasions and social roles. The versatility of the saree is evident in its ability to seamlessly transition from everyday wear to formal events, making it a wardrobe staple for women across India." data-price="300 CHF" data-length="Standard Length: 320.04cm "  style="background-image: url(images/Sari1.webp);"></a>
+						    					<div class="text text-center pt-4">
+						    						<h3><a href="product-single.html">Designer Sari</a></h3>
+						    						<p>A traditional saree is a timeless ethnic attire, characterized by its graceful drape and cultural significance, reflecting the rich heritage of India.</p>
+						    						<p class="price"><span>300 CHF</span></p>
+						    						<p><a href="cart.html" class="btn btn-primary btn-outline-primary">Add to Cart</a></p>
+						    					</div>
+						    				</div>
+						        	</div>
+						        	<div class="col-md-3">
+						        		<div class="menu-entry">
+											<a href="images/sari2.jpeg" class="img magnific-popup" data-title="Fancy Saree Blu" data-description="Woven into the fabric of tradition and cultural heritage, a fancy saree stands as a testament to the rich tapestry of Indian fashion. Each thread, carefully selected and woven, tells a story of craftsmanship and artistry passed down through generations.
+
+The allure of a fancy saree lies not only in its aesthetic appeal but also in its ability to transcend time and trends. Its ornate design, often a mesmerizing interplay of sequins, embroidery, and zari work, captures the essence of celebration and festivity. The vibrant colors that adorn the saree symbolize the myriad hues of life, adding a dynamic flair to the wearer's persona.
+
+As the wearer gracefully drapes the saree around herself, she steps into a realm where tradition meets modernity. The saree becomes a canvas for self-expression, allowing the wearer to showcase her individuality while remaining rooted in cultural grace. Whether worn during weddings, festivals, or special occasions, the fancy saree becomes a symbol of elegance and sophistication.
+
+Beyond its visual appeal, the fancy saree carries a profound cultural significance. It is not merely an ensemble; it is a reflection of regional diversity, showcasing the unique craftsmanship of different Indian states. From the Banarasi silk sarees of Uttar Pradesh to the Kanjeevaram silk sarees of Tamil Nadu, each variant tells a distinctive story of heritage and legacy.
+
+" data-price="200 CHF" data-length="Long Length: 457.20cm"  style="background-image: url(images/sari2.jpeg);"></a>
+												<div class="text text-center pt-4">
+						    						<h3><a href="product-single.html">Fancy Saree Blue</a></h3>
+						    						<p>A fancy saree is an ornate and stylish traditional garment, often embellished with intricate details and vibrant colors, embodying timeless elegance.</p>
+						    						<p class="price"><span>200 CHF</span></p>
+						    						<p><a href="cart.html" class="btn btn-primary btn-outline-primary">Add to Cart</a></p>
+						    					</div>
+						    				</div>
+						        	</div>
+						        	<div class="col-md-3">
+						        		<div class="menu-entry">
+											<a href="images/sari3.jpeg" class="img magnific-popup" data-title="Designer Sari" data-description="A traditional saree is a timeless ethnic attire, characterized by its graceful drape and cultural significance, reflecting the rich heritage of India." data-price="300 CHF" data-length="Standard Length"  style="background-image: url(images/sari3.jpeg);"></a>
+												<div class="text text-center pt-4">
+						    						<h3><a href="product-single.html">Fancy Saree Green </a></h3>
+						    						<p>A fancy saree is an exquisite garment adorned with intricate designs and embellishments, elevating traditional elegance with a modern flair.</p>
+						    						<p class="price"><span>180 CHF</span></p>
+						    						<p><a href="cart.html" class="btn btn-primary btn-outline-primary">Add to Cart</a></p>
+						    					</div>
+						    				</div>
+						        	</div>
+						        	<div class="col-md-3">
+						        		<div class="menu-entry">
+											<a href="images/sari4.jpeg" class="img magnific-popup" data-title="Designer Sari" data-description="A traditional saree is a timeless ethnic attire, characterized by its graceful drape and cultural significance, reflecting the rich heritage of India." data-price="300 CHF" data-length="Standard Length"  style="background-image: url(images/sari4.jpeg);"></a>
+												<div class="text text-center pt-4">
+						    						<h3><a href="product-single.html">Blended Silk Green</a></h3>
+						    						<p>A Blended Silk Embroidered Saree in Green is a luxurious garment embellished with intricate embroidery and designs.</p>
+						    						<p class="price"><span>150 CHF</span></p>
+						    						<p><a href="cart.html" class="btn btn-primary btn-outline-primary">Add to Cart</a></p>
+						    					</div>
+						    				</div>
+						        	</div>
+		              	</div>
+		              </div>
+
+		              <div class="tab-pane fade" id="v-pills-1" role="tabpanel" aria-labelledby="v-pills-1-tab">
+		                <div class="row">
+		              		<div class="col-md-4 text-center">
+		              			<div class="menu-wrap">
+		              				<a href="#" class="menu-img img mb-4" style="background-image: url(images/lehenga1.jpeg);"></a>
+		              				<div class="text">
+		              					<h3><a href="product-single.html">Heavy Embroidery</a></h3>
+		              					<p>The red lehenga is a stunning and vibrant traditional ensemble, radiating elegance with its rich hue,</p>
+		              					<p class="price"><span>200 CHF</span></p>
+		              					<p><a href="cart.html" class="btn btn-primary btn-outline-primary">Add to cart</a></p>
+		              				</div>
+		              			</div>
+		              		</div>
+		              		<div class="col-md-4 text-center">
+		              			<div class="menu-wrap">
+		              				<a href="#" class="menu-img img mb-4" style="background-image: url(images/lehenga2.jpeg);"></a>
+		              				<div class="text">
+		              					<h3><a href="product-single.html">Bridal lehenga</a></h3>
+		              					<p>The red lehenga is a striking ensemble, vibrant in color and adorned with exquisite details.</p>
+		              					<p class="price"><span>150 CHF</span></p>
+		              					<p><a href="cart.html" class="btn btn-primary btn-outline-primary">Add to cart</a></p>
+		              				</div>
+		              			</div>
+		              		</div>
+		              	</div>
+		              </div>
+
+		              <div class="tab-pane fade" id="v-pills-2" role="tabpanel" aria-labelledby="v-pills-2-tab">
+		                <div class="row">
+		              		<div class="col-md-4 text-center">
+		              			<div class="menu-wrap">
+		              				<a href="#" class="menu-img img mb-4" style="background-image: url(images/necklace1.jpeg);"></a>
+		              				<div class="text">
+		              					<h3><a href="product-single.html">Polki Kundan Choker</a></h3>
+		              					<p>The Polki Kundan Choker is a regal necklace, exuding timeless charm with its intricate craftsmanship, featuring uncut diamonds (Polki) and traditional Kundan setting, making it a stunning and culturally rich adornment.</p>
+		              					<p class="price"><span>500 CHF</span></p>
+		              					<p><a href="cart.html" class="btn btn-primary btn-outline-primary">Add to cart</a></p>
+		              				</div>
+		              			</div>
+		              		</div>
+		              	</div>
+		              </div>
+
+		              <div class="tab-pane fade" id="v-pills-3" role="tabpanel" aria-labelledby="v-pills-3-tab">
+		                <div class="row">
+		              		<div class="col-md-4 text-center">
+		              			<div class="menu-wrap">
+		              				<a href="#" class="menu-img img mb-4" style="background-image: url(images/earing.jpeg);"></a>
+		              				<div class="text">
+		              					<h3><a href="product-single.html">Pink Kudan Chandbali</a></h3>
+		              					<p>The Pink Kudan Chandbali earrings are a stunning blend of elegance and charm, featuring intricate kudan work in a beautiful shade of pink that adds a touch of grace and sophistication to any ensemble.</p>
+		              					<p class="price"><span>20 CHF</span></p>
+		              					<p><a href="cart.html" class="btn btn-primary btn-outline-primary">Add to cart</a></p>
+		              				</div>
+		              			</div>
+		              		</div>
+		              	</div>
+		              </div>
+		            </div>
+		          </div>
+		        </div>
+		      </div>
+		    </div>
+    	</div>
+    </section>
+
+
+	  <footer id="footer">
+		  <div class="footer-top">
+			  <div class="container">
+				  <div class="row">
+
+					  <div class="col-lg-3 col-md-6 footer-contact">
+						  <h3>Anu's Henna</h3>
+						  <p>
+
+							  Römerstrasse 151,<br>
+							  8404 Winterthur, <br>
+							  ZH, Schweiz <br><br>
+
+							  <strong>Phone:</strong>+41 78 214 61 13<br>
+							  <strong>Email:</strong> wintihennaartistanu@gmail<br>
+						  </p>
+					  </div>
+
+					  <div class="col-lg-3 col-md-6 footer-links">
+						  <h4>Useful Links</h4>
+						  <ul>
+							  <li><i class="bx bx-chevron-right"></i> <a href="index.html">Home</a></li>
+							  <li><i class="bx bx-chevron-right"></i> <a href="index.html#about">About us</a></li>
+							  <li><i class="bx bx-chevron-right"></i> <a href="index.html#services">Services</a></li>
+							  <li><i class="bx bx-chevron-right"></i> <a href="portfolio.html">Portfolio</a></li>
+							  <li><i class="bx bx-chevron-right"></i> <a href="index.html#faq">FAQ</a></li>
+							  <li><i class="bx bx-chevron-right"></i> <a href="impressum.html">Imprint</a></li>
+
+						  </ul>
+
+					  </div>
+
+					  <div class="col-lg-3 col-md-6 footer-links">
+						  <h4>Our Social Networks</h4>
+						  <div class="social-links mt-3">
+							  <a href="https://www.facebook.com/profile.php?id=61552521793759"><i class="bi bi-facebook"></i></a>
+							  <a href="https://www.instagram.com/wintihennaartistanu/?igshid=NzZlODBkYWE4Ng%3D%3D&utm_source=qr"><i class="bi bi-instagram  "></i></a>
+							  <a href="https://www.tiktok.com/@anu.raj25?_t=8gpFTvsiEoj&_r=1">            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">  <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3V0Z"/></svg>
+								  </i></a>
+
+						  </div>
+					  </div>
+				  </div>
+			  </div>
+
+		  </div>
+		  </div>
+		  </div>
+		  <div class="container py-4">
+			  <div class="copyright">
+				  &copy; Copyright <strong><span>Anus'Henna</span></strong>. All Rights Reserved
+
+			  </div>
+	  </footer><!-- End Footer -->
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/bootstrap-datepicker.js"></script>
+  <script src="js/jquery.timepicker.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="js/google-map.js"></script>
+  <script src="js/main2.js"></script>
+
+  </body>
+</html>

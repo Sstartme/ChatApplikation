@@ -11,4 +11,5 @@ INSERT INTO member (id, prename, lastname, password, username, authority, uses2F
 VALUES (1, 'Albert', 'Einstein', '/t2+zkzxhDgIumqVdCitszI4Ple5zKlPZNQa5W+wRlbj7UcmiKYOxA==', 'albert.einstein', 'admin', true, 'D5GUZ46UVWBZ5WBADLLHK2OAVLJ7OXJM'),
        (2, 'Mac', 'Afee', '/t2+zkzxhDgIumqVdCitszI4Ple5zKlPZNQa5W+wRlbj7UcmiKYOxA==', 'mac.afee', 'supervisor', true, 'D5GUZ46UVWBZ5WBADLLHK2OAVLJ7OXJM'),
        (3, 'Tony', 'Stark', '/t2+zkzxhDgIumqVdCitszI4Ple5zKlPZNQa5W+wRlbj7UcmiKYOxA==', 'toni.stark', 'moderator', true, 'D5GUZ46UVWBZ5WBADLLHK2OAVLJ7OXJM'),
-       (4, 'Wilhelm', 'Tell', '/t2+zkzxhDgIumqVdCitszI4Ple5zKlPZNQa5W+wRlbj7UcmiKYOxA==', 'wilhelm.tell', 'member' , true, 'D5GUZ46UVWBZ5WBADLLHK2OAVLJ7OXJM');
+       (4, 'Wilhelm', 'Tell', '/t2+zkzxhDgIumqVdCitszI4Ple5zKlPZNQa5W+wRlbj7UcmiKYOxA==', 'wilhelm.tell', 'admin' , true, 'D5GUZ46UVWBZ5WBADLLHK2OAVLJ7OXJM'),
+       (5, 'Sinthi', 'abdu', 'wpzORQEDwHXqJETSZ5Ba6d1TNmxcF/+svQOJARNDkvtHw4dXj2Yxkw==', 'sinthi.abdu', 'admin' , true, '3LQH7NVL6CDIVCIC');

@@ -79,7 +79,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
             .antMatchers("/delete-member").hasAuthority("admin")
             .antMatchers("/edit-message").hasAuthority("moderator")
             .antMatchers("/delete-message").hasAuthority("moderator")
-            .anyRequest().authenticated()
+             // .anyRequest().authenticated()
             .and().formLogin().authenticationDetailsSource(authenticationDetailsSource).loginPage("/login").permitAll()
             .and().logout().permitAll()
               .and().oauth2Login().loginPage("/login").permitAll()
